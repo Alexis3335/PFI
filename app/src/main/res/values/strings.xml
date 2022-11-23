@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PFI</string>
-    <string name="egg_pudding_description">hello</string>
+    <string name="egg_pudding_description">This simple stew sat simmering for a long time to bring out the sweetness of the carrots.</string>
+    <string name="egg_pudding_name">Egg Pudding</string>
+    <string name="egg_pudding_price">70 Rupees</string>
+    <string name="egg_pudding_hearts">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</string>
 </resources>
