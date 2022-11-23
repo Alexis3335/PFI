@@ -4,4 +4,8 @@
     <string name="egg_pudding_description">Ce simple ragoût a mijoté longtemps pour faire ressortir le goût sucré des carottes.</string>
     <string name="egg_pudding_price">70 💎</string>
     <string name="egg_pudding_hearts">❤❤❤❤❤❤❤❤❤❤❤</string>
+    <string name="login_nom">Entrez votre nom</string>
+    <string name="login_pass">Entrez votre mot de passe</string>
+    <string name="nom_magasin">Magasin General</string>
+    <string name="bouton_login">Connexion</string>
 </resources>

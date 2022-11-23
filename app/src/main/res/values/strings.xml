@@ -4,4 +4,8 @@
     <string name="egg_pudding_name">Egg Pudding</string>
     <string name="egg_pudding_price">70 💎</string>
     <string name="egg_pudding_hearts">❤❤❤❤❤❤❤❤❤❤❤</string>
+    <string name="login_nom">Enter your name</string>
+    <string name="login_pass">Enter password</string>
+    <string name="nom_magasin">General Shoppe</string>
+    <string name="bouton_login">Login</string>
 </resources>
