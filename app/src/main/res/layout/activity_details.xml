@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00477D21"
-    android:backgroundTint="#003A6D25"
+    android:background="#FFFFFF"
+    android:backgroundTint="#B1CAA7"
     android:outlineAmbientShadowColor="#00000000"
     tools:context=".login">
 
