@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#B1CAA7"
     tools:context=".login">
 
     <EditText
@@ -16,6 +18,7 @@
         android:hint="@string/login_nom"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="#3E3E3E"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,6 +34,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:password="true"
+        android:textColor="#3E3E3E"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +49,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/zelda_font"
         android:text="@string/nom_magasin"
+        android:textColor="#3E3E3E"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,12 +64,29 @@
         android:layout_width="221dp"
         android:layout_height="52dp"
         android:layout_marginBottom="216dp"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="#8B422C"
         android:fontFamily="@font/zelda_font"
         android:text="@string/bouton_login"
-        android:textColor="#000000"
+        android:textColor="#050505"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textLoginErreur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/zelda_font"
+        android:text="@string/erreur_login"
+        android:textAlignment="center"
+        android:textColor="#8B422C"
+        android:textSize="34sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.197" />
 </androidx.constraintlayout.widget.ConstraintLayout>
