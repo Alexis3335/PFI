@@ -8,4 +8,6 @@
     <string name="login_pass">Entrez votre mot de passe</string>
     <string name="nom_magasin">Magasin General</string>
     <string name="bouton_login">Connexion</string>
+    <string name="btnBack">Ajouter au panier</string>
+    <string name="btnAddCart">Retour</string>
 </resources>

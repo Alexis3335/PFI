@@ -8,4 +8,6 @@
     <string name="login_pass">Enter password</string>
     <string name="nom_magasin">General Shoppe</string>
     <string name="bouton_login">Login</string>
+    <string name="btnBack">Back</string>
+    <string name="btnAddCart">Back</string>
 </resources>
