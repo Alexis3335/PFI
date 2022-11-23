@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PFI</string>
-    <string name="egg_pudding_description">allo</string>
+    <string name="egg_pudding_name">Pouding aux oeufs</string>
+    <string name="egg_pudding_description">Ce simple ragoût a mijoté longtemps pour faire ressortir le goût sucré des carottes.</string>
+    <string name="egg_pudding_price">70 Rupees</string>
+    <string name="egg_pudding_hearts">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</string>
 </resources>
