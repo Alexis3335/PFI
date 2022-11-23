@@ -4,4 +4,6 @@
     <string name="egg_pudding_name">Egg Pudding</string>
     <string name="egg_pudding_price">70 💎</string>
     <string name="egg_pudding_hearts">❤❤❤❤❤❤❤❤❤❤❤</string>
+    <string name="btnAddCart">Add to cart</string>
+    <string name="btnBack">Back</string>
 </resources>
