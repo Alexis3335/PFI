@@ -1,6 +1,7 @@
 package com.example.pfi;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,8 +58,10 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
             layout = itemView.findViewById(R.id.contraintLayoutProduitLigne);
 
             layout.setOnClickListener(view -> {
-                Toast t = Toast.makeText(context,produit.getNom(), Toast.LENGTH_LONG);
-                t.show();
+                Intent intent = new Intent(view.getContext(), details.class);
+                intent.putExtra("produit", produit);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                view.getContext().startActivity(intent);
             });
 
         }
