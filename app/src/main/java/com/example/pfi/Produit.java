@@ -2,18 +2,21 @@ package com.example.pfi;
 
 import android.graphics.drawable.Drawable;
 
-public class Produit {
+import java.io.Serializable;
+
+public class Produit implements Serializable {
     private String nom;
     private String description;
     private int image;
-    private double prix;
-    private int coeurs;
+    private String prix;
+    private String coeurs;
 
-    public Produit(String nom,String description,int image,double prix) {
+    public Produit(String nom,String description,int image,String prix,String coeurs) {
         this.nom = nom;
         this.description = description;
         this.image = image;
         this.prix = prix;
+        this.coeurs = coeurs;
     }
 
     public String getNom() {
@@ -40,17 +43,18 @@ public class Produit {
         this.image = image;
     }
 
-    public double getPrix() {
+    public String getPrix() {
         return prix;
     }
 
-    public void setPrix(double prix) {
+    public void setPrix(String prix) {
         this.prix = prix;
     }
-    public double getCoeurs() {
+
+    public String getCoeurs() {
         return coeurs;
     }
 
-    public void setCoeurs(int coeurs) { this.coeurs = coeurs;
+    public void setCoeurs(String coeurs) { this.coeurs = coeurs;
     }
 }
