@@ -27,8 +27,10 @@ public class login extends AppCompatActivity {
                 erreur.setVisibility(View.VISIBLE);
             }
             else{
-                Clients client = new Clients(nom);
-               // Intent intent = new Intent
+                Clients client = Clients.getInstance(nom);
+                Intent intent = new Intent(login.this,Produits.class);
+                intent.putExtra("client",client);
+                startActivity(intent);
             }
 
         });
