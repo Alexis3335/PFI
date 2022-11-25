@@ -7,6 +7,7 @@ public class Produit {
     private String description;
     private int image;
     private double prix;
+    private int coeurs;
 
     public Produit(String nom,String description,int image,double prix) {
         this.nom = nom;
@@ -45,5 +46,11 @@ public class Produit {
 
     public void setPrix(double prix) {
         this.prix = prix;
+    }
+    public double getCoeurs() {
+        return coeurs;
+    }
+
+    public void setCoeurs(int coeurs) { this.coeurs = coeurs;
     }
 }
