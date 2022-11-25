@@ -1,37 +1,47 @@
 <resources>
     <string name="app_name">PFI</string>
+
     <string name="egg_pudding_name">Pouding aux oeufs</string>
     <string name="egg_pudding_description">Fait en cuisinant des oeufs et du lait dans un moule spécial, sa texture fond dans la bouche.</string>
-    <string name="egg_pudding_price">20 💎</string>
-    <string name="egg_pudding_hearts">❤❤❤❤❤❤</string>
+
     <string name="egg_tart_name">Tarte aux oeufs</string>
     <string name="egg_tart_description">Vous saurez que ce dessert simple est cuit lorsqu\'il sent tout simplement délicieux.</string>
-    <string name="egg_tart_price">30 💎</string>
-    <string name="egg_tart_hearts">❤❤❤❤</string>
+
     <string name="carrot_stew_name">Ragoût de carottes</string>
     <string name="carrot_stew_description">Ce simple ragoût a mijoté longtemps pour faire ressortir la douceur des carottes.</string>
-    <string name="carrot_stew_price">70 💎</string>
-    <string name="carrot_stew_hearts">❤❤❤❤❤❤❤❤❤❤❤</string>
+
     <string name="creamy_heart_soup_name">Soupe de coeurs crémeuse</string>
     <string name="creamy_heart_soup_description">Savourer cette soupe sucrée avec une autre personne vous rapprochera tous les deux.</string>
-    <string name="creamy_heart_soup_price">70 💎</string>
-    <string name="creamy_heart_soup_hearts">❤❤❤❤❤❤❤❤❤❤❤</string>
+
+    <string name="meat_pie_name">Tourte à la viande</string>
+    <string name="meat_pie_description">Vous aurez besoin d\'une serviette supplémentaire pour faire face à cette tarte juteuse de viande hachée parfaitement cuite.</string>
+
     <string name="creamy_meat_soup_name">Soupe de viande crémeuse</string>
     <string name="creamy_meat_soup_description">Cette soupe nutritive contient de grandes portions de viande légèrement braisée et de nombreux légumes.</string>
-    <string name="creamy_meat_soup_price">60 💎</string>
-    <string name="creamy_meat_soup_hearts">❤❤❤❤❤❤</string>
+
     <string name="gourmet_poultry_name">Pilaf de volaille groute</string>
     <string name="gourmet_poultry_description">Fabriqué avec de la volaille de la plus haute qualité, chaque bouchée de ce pilaf inonde votre bouche de saveur.</string>
-    <string name="gourmet_poultry_price">20 💎</string>
-    <string name="gourmet_poultry_hearts">❤❤</string>
+
     <string name="hot_pot_name">Fondue</string>
     <string name="hot_pot_description">Un plat chaud à base de poisson local bien cuit. Un favori des visiteurs du village de Deya.</string>
-    <string name="hot_pot_price">40 💎</string>
-    <string name="hot_pot_hearts">❤❤❤❤❤❤❤❤</string>
+
     <string name="omelet_name">Omelette</string>
     <string name="omelet_description">Ce plat simple est courant dans tout Hyrule. Faites simplement frire un œuf jusqu\'à ce qu\'il soit agréable et dodu.</string>
-    <string name="omelet_price">20 💎</string>
-    <string name="omelet_hearts">❤❤❤</string>
+
+    <string name="pepper_steak_name">Steak au poivre</string>
+    <string name="pepper_steak_description">La viande a été cuite dans des piments broyés pour accentuer son goût naturel.</string>
+
+    <string name="pumpkin_stew_name">Ragoût de citrouille</string>
+    <string name="pumpkin_stew_description">La viande a été cuite dans des piments broyés pour accentuer son goût naturel.</string>
+
+    <string name="salt_grilled_crab_name">Crabe grillé au sel</string>
+    <string name="salt_grilled_crab_description">Neuf pêcheurs sur dix sont d\'accord : le crabe se déguste mieux grillé et avec juste un peu de sel.</string>
+
+    <string name="vegetable_risotto_name">Risotto aux légumes</string>
+
+    <string name="steamed_fish_name">Poisson cuit à vapeur</string>
+    <string name="steamed_fish_description">Un plat raffiné préparé en enveloppant un poisson frais dans des légumes verts sauvages parfumés et en le faisant cuire.</string>
+
     <string name="login_nom">Entrez votre nom</string>
     <string name="login_pass">Entrez votre mot de passe</string>
     <string name="nom_magasin">Magasin General</string>
@@ -39,4 +49,7 @@
     <string name="btnBack">Retour</string>
     <string name="btnAddCart">Ajouter au panier</string>
     <string name="erreur_login">Veuillez remplir tous les champs</string>
+    <string name="seafood_rice_balls_name">Boulettes de riz aux fruits de mer</string>
+    <string name="seafood_rice_balls_description">Farcies de fruits de mer aromatiques, la saveur peut varier selon les ingrédients mais ne déçoit jamais.</string>
+    <string name="vegetable_risotto_description">La douceur des ingrédients donne à ce risotto une saveur douce.</string>
 </resources>
