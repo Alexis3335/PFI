@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class Clients implements Serializable {
     private String nom;
-    private double prixPanier;
+    private int prixPanier;
     private static Clients instance;
     private ArrayList<Produits> produits = new ArrayList<>();
 
@@ -53,11 +53,11 @@ public class Clients implements Serializable {
         this.nom = nom;
     }
 
-    public double getPrixPanier() {
+    public int getPrixPanier() {
         return prixPanier;
     }
 
-    public void setPrixPanier(double prixPanier) {
+    public void setPrixPanier(int prixPanier) {
         this.prixPanier = prixPanier;
     }
 }

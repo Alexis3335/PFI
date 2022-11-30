@@ -60,6 +60,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
             layout.setOnClickListener(view -> {
                 Intent intent = new Intent(view.getContext(), details.class);
                 intent.putExtra("produit", produit);
+                intent.putExtra("client",Clients.getInstance(""));
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 view.getContext().startActivity(intent);
             });
