@@ -15,7 +15,7 @@ public class Produit implements Serializable {
         this.nom = nom;
         this.description = description;
         this.image = image;
-        this.prix = prix;
+        this.prix = prix.substring(0, prix.length() - 2);
         this.coeurs = coeurs;
     }
 

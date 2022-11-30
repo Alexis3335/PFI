@@ -43,6 +43,7 @@ public class details extends AppCompatActivity implements Serializable {
             //int duration = Toast.LENGTH_SHORT;
             //Toast toast = Toast.makeText(context, msg, duration);
             //toast.show();
+            System.out.println(client.getProduits());
         });
 
     }
