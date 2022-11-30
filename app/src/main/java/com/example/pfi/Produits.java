@@ -22,6 +22,7 @@ public class Produits extends AppCompatActivity {
         remplirProduits(arrProduits);
 
         Adaptateur adaptateur = new Adaptateur(getApplicationContext(),arrProduits);
+        adaptateur.client = (Clients) getIntent().getSerializableExtra("client");
         recycler.setAdapter(adaptateur);
 
         recycler.setLayoutManager(new LinearLayoutManager(this));

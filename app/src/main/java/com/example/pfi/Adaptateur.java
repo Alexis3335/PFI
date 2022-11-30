@@ -20,6 +20,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
 
     Context context;
     ArrayList<Produit> produits;
+    Clients client;
 
     public Adaptateur(Context context,ArrayList<Produit> produits){
         this.context = context;
@@ -39,6 +40,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
         holder.txtNom.setText(produits.get(position).getNom());
         holder.image.setBackgroundResource(produits.get(position).getImage());
         holder.produit = produits.get(position);
+        holder.client = client;
     }
 
     @Override
@@ -50,6 +52,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
         TextView txtNom;
         ImageView image;
         Produit produit;
+        Clients client;
         ConstraintLayout layout;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -60,7 +63,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
             layout.setOnClickListener(view -> {
                 Intent intent = new Intent(view.getContext(), details.class);
                 intent.putExtra("produit", produit);
-                intent.putExtra("client",Clients.getInstance(""));
+                intent.putExtra("client",client);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 view.getContext().startActivity(intent);
             });
