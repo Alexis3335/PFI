@@ -53,4 +53,5 @@
     <string name="seafood_rice_balls_description">Farcies de fruits de mer aromatiques, la saveur peut varier selon les ingrédients mais ne déçoit jamais.</string>
     <string name="vegetable_risotto_description">La douceur des ingrédients donne à ce risotto une saveur douce.</string>
     <string name="msg_added_to_cart">Ajouté au panier</string>
+    <string name="btnShoppingCart">Aller au panier</string>
 </resources>

@@ -84,4 +84,5 @@
     <string name="btnBack">Back</string>
     <string name="btnAddCart">Add to cart</string>
     <string name="erreur_login">Please fill all fields</string>
+    <string name="btnShoppingCart">Go to checkout</string>
 </resources>
