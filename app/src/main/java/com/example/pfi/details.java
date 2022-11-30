@@ -32,19 +32,21 @@ public class details extends AppCompatActivity implements Serializable {
         binding.txtViewCoeurs.setText(produit.getCoeurs());
         binding.txtViewDescription.setText(produit.getDescription());
 
+        Toast toast = Toast.makeText(this, getString(R.string.msg_added_to_cart), Toast.LENGTH_SHORT);
+        Thread thread = new Thread(new Runnable(){
+            @Override
+            public void run(){
+                toast.show();
+            }
+        });
         binding.btnRetour.setOnClickListener(view ->{
             Intent intent = new Intent(details.this, Produits.class);
             startActivity(intent);
         });
         binding.btnAddCart.setOnClickListener(view ->{
             client.addProduit(produit);
-            //String msg = getString(R.string.msg_added_to_cart);
-            //Context context = this.getApplicationContext();
-            //int duration = Toast.LENGTH_SHORT;
-            //Toast toast = Toast.makeText(context, msg, duration);
-            //toast.show();
-            System.out.println(client.getProduits());
+            thread.start();
         });
-
     }
+
 }
