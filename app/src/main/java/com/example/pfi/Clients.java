@@ -12,17 +12,19 @@ public class Clients implements Serializable {
     private String nom;
     private int prixPanier;
     private static Clients instance;
-    private ArrayList<Produits> produits = new ArrayList<>();
+    private ArrayList<Produit> produits = new ArrayList<>();
 
-    public ArrayList<Produits> getProduits() {
+    public ArrayList<Produit> getProduits() {
         return produits;
     }
 
-    public void setProduits(ArrayList<Produits> produits) {
+    public void setProduits(ArrayList<Produit> produits) {
         this.produits = produits;
     }
 
-
+    public void addProduit(Produit produit){
+        this.produits.add(produit);
+    }
 
     private Clients(String nom) {
         this.nom = nom;

@@ -21,8 +21,6 @@ public class details extends AppCompatActivity implements Serializable {
         binding = DataBindingUtil.setContentView(details.this, R.layout.activity_details);
 
         Produit produit = (Produit) getIntent().getSerializableExtra("produit");
-        Clients c = (Clients) getIntent().getSerializableExtra("client");
-        System.out.println(c.getNom());
 
         binding.img.setImageResource(produit.getImage());
         binding.txtViewNom.setText(produit.getNom());
