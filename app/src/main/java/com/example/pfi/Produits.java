@@ -5,7 +5,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -18,11 +21,22 @@ public class Produits extends AppCompatActivity {
 
         ArrayList<Produit> arrProduits = new ArrayList<Produit>();
         RecyclerView recycler = findViewById(R.id.recyclerProduits);
+        Button btnAllerPanier = findViewById(R.id.btnAllerPanier);
+        Clients client = (Clients) getIntent().getSerializableExtra("client");
+
+        btnAllerPanier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Produits.this,panier.class);
+                intent.putExtra("client",client);
+                startActivity(intent);
+            }
+        });
 
         remplirProduits(arrProduits);
 
         Adaptateur adaptateur = new Adaptateur(getApplicationContext(),arrProduits);
-        adaptateur.client = (Clients) getIntent().getSerializableExtra("client");
+        adaptateur.client = client;
         recycler.setAdapter(adaptateur);
 
         recycler.setLayoutManager(new LinearLayoutManager(this));
