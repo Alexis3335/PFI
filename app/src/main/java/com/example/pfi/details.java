@@ -21,6 +21,7 @@ public class details extends AppCompatActivity implements Serializable {
         binding = DataBindingUtil.setContentView(details.this, R.layout.activity_details);
 
         Produit produit = (Produit) getIntent().getSerializableExtra("produit");
+        Clients client = (Clients) getIntent().getSerializableExtra("client");
 
         binding.img.setImageResource(produit.getImage());
         binding.txtViewNom.setText(produit.getNom());
@@ -31,6 +32,10 @@ public class details extends AppCompatActivity implements Serializable {
         binding.btnRetour.setOnClickListener(view ->{
             Intent intent = new Intent(details.this, Produits.class);
             startActivity(intent);
+        });
+        binding.btnAddCart.setOnClickListener(view ->{
+            client.addProduit(produit);
+            //Toast
         });
 
     }
