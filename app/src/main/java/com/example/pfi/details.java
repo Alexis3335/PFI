@@ -3,8 +3,11 @@ package com.example.pfi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
+
 import com.example.pfi.databinding.ActivityDetailsBinding;
 
 import java.io.Serializable;
@@ -35,7 +38,12 @@ public class details extends AppCompatActivity implements Serializable {
         });
         binding.btnAddCart.setOnClickListener(view ->{
             client.addProduit(produit);
-            //Toast
+            //String msg = getString(R.string.msg_added_to_cart);
+            //Context context = this.getApplicationContext();
+            //int duration = Toast.LENGTH_SHORT;
+            //Toast toast = Toast.makeText(context, msg, duration);
+            //toast.show();
+            System.out.println(client.getProduits());
         });
 
     }

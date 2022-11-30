@@ -24,6 +24,9 @@ public class Clients implements Serializable {
 
     public void addProduit(Produit produit){
         this.produits.add(produit);
+        String prix = produit.getPrix();
+        int Prix = Integer.parseInt(prix);
+        addPrixPanier(Prix);
     }
 
     private Clients(String nom) {
@@ -61,5 +64,8 @@ public class Clients implements Serializable {
 
     public void setPrixPanier(int prixPanier) {
         this.prixPanier = prixPanier;
+    }
+    public void addPrixPanier(int prix){
+        setPrixPanier(getPrixPanier() + prix);
     }
 }
