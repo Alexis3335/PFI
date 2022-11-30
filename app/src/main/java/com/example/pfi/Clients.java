@@ -1,6 +1,7 @@
 package com.example.pfi;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Représente un client
@@ -11,6 +12,17 @@ public class Clients implements Serializable {
     private String nom;
     private double prixPanier;
     private static Clients instance;
+    private ArrayList<Produits> produits = new ArrayList<>();
+
+    public ArrayList<Produits> getProduits() {
+        return produits;
+    }
+
+    public void setProduits(ArrayList<Produits> produits) {
+        this.produits = produits;
+    }
+
+
 
     private Clients(String nom) {
         this.nom = nom;
