@@ -76,6 +76,7 @@
     <string name="steamed_fish_price" translatable="false">40 💎</string>
     <string name="steamed_fish_hearts" translatable="false">❤❤❤❤❤❤❤</string>
 
+    <string name="payCart">Pay cart</string>
     <string name="msg_added_to_cart">Added to cart</string>
     <string name="login_nom">Enter your name</string>
     <string name="login_pass">Enter password</string>

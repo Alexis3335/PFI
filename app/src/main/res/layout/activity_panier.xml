@@ -4,6 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#B1CAA7"
     tools:context=".panier">
 
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#00B23C3C"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/prenomnom"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:fontFamily="@font/zelda_font"
+            android:textColor="#2C2C2C"
+            android:textSize="48sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPanier"
+            android:layout_width="match_parent"
+            android:layout_height="498dp" />
+
+        <Button
+            android:id="@+id/btnPayerPanier"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:backgroundTint="#8B422C"
+            android:fontFamily="@font/zelda_font"
+            android:minHeight="48dp"
+            android:text="@string/payCart"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerProduits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <Button
+            android:id="@+id/btnRetourPanier"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/zelda_font"
+            android:text="@string/btnBack"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerProduits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

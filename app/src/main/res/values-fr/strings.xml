@@ -54,4 +54,5 @@
     <string name="vegetable_risotto_description">La douceur des ingrédients donne à ce risotto une saveur douce.</string>
     <string name="msg_added_to_cart">Ajouté au panier</string>
     <string name="btnShoppingCart">Aller au panier</string>
+    <string name="payCart">Payer le panier</string>
 </resources>
