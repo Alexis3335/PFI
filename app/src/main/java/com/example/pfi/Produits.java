@@ -26,6 +26,8 @@ public class Produits extends AppCompatActivity {
         Button btnAllerPanier = findViewById(R.id.btnAllerPanier);
         Clients client = (Clients) getIntent().getSerializableExtra("client");
         VideoView videoView = findViewById(R.id.videoViewProduits);
+        boolean estPanier = false;
+
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
@@ -48,7 +50,7 @@ public class Produits extends AppCompatActivity {
 
         remplirProduits(arrProduits);
 
-        Adaptateur adaptateur = new Adaptateur(getApplicationContext(),arrProduits);
+        Adaptateur adaptateur = new Adaptateur(getApplicationContext(),arrProduits, estPanier);
         adaptateur.client = client;
         recycler.setAdapter(adaptateur);
 

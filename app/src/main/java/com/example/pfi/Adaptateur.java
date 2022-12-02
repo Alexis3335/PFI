@@ -2,13 +2,11 @@ package com.example.pfi;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,10 +19,12 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
     Context context;
     ArrayList<Produit> produits;
     Clients client;
+    boolean estPanier;
 
-    public Adaptateur(Context context,ArrayList<Produit> produits){
+    public Adaptateur(Context context,ArrayList<Produit> produits, boolean estPanier){
         this.context = context;
         this.produits = produits;
+        this.estPanier = estPanier;
     }
 
     @NonNull
@@ -41,6 +41,8 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
         holder.image.setBackgroundResource(produits.get(position).getImage());
         holder.produit = produits.get(position);
         holder.client = client;
+        if(estPanier)
+            holder.prix.setText(produits.get(position).getPrix());
     }
 
     @Override
@@ -53,21 +55,28 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
         ImageView image;
         Produit produit;
         Clients client;
+        TextView prix;
+
         ConstraintLayout layout;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             txtNom = itemView.findViewById(R.id.nomProduitRecycler);
             image = itemView.findViewById(R.id.imageProduitRecycler);
-            layout = itemView.findViewById(R.id.contraintLayoutProduitLigne);
 
-            layout.setOnClickListener(view -> {
-                Intent intent = new Intent(view.getContext(), details.class);
-                intent.putExtra("produit", produit);
-                intent.putExtra("client",client);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                view.getContext().startActivity(intent);
-            });
-
+            if (!estPanier){
+                layout = itemView.findViewById(R.id.contraintLayoutProduitLigne);
+                layout.setOnClickListener(view -> {
+                    Intent intent = new Intent(view.getContext(), details.class);
+                    intent.putExtra("produit", produit);
+                    intent.putExtra("client", client);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    view.getContext().startActivity(intent);
+                });
+            }
+            else {
+                prix = itemView.findViewById(R.id.prixProduit);
+                layout = itemView.findViewById(R.id.constraintLayoutProduitPanierLigne);
+            }
         }
     }
 }

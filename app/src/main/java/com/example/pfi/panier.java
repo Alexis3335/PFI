@@ -25,14 +25,16 @@ public class panier extends AppCompatActivity implements Serializable {
 
         Button retour = (Button) findViewById(R.id.btnRetourPanier);
         RecyclerView recycler = findViewById(R.id.recyclerPanier);
+        boolean estPanier = true;
 
-
-        Adaptateur adaptateur = new Adaptateur(getApplicationContext(),panier);
+        Adaptateur adaptateur = new Adaptateur(getApplicationContext(),panier, estPanier);
         adaptateur.client = client;
         recycler.setAdapter(adaptateur);
 
         recycler.setLayoutManager(new LinearLayoutManager(this));
         recycler.setItemAnimator(new DefaultItemAnimator());
         recycler.setHasFixedSize(true);
+
+
     }
 }
