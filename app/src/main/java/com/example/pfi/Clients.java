@@ -25,8 +25,10 @@ public class Clients implements Serializable {
     public void addProduit(Produit produit){
         this.produits.add(produit);
         String prix = produit.getPrix();
+        prix = prix.substring(0,prix.length() - 3);
         int Prix = Integer.parseInt(prix);
         addPrixPanier(Prix);
+        System.out.println(Prix);
     }
 
     private Clients(String nom) {
