@@ -35,6 +35,7 @@ public class details extends AppCompatActivity implements Serializable {
 
         binding.btnRetour.setOnClickListener(view ->{
             Intent intent = new Intent(details.this, Produits.class);
+            intent.putExtra("client",client);
             startActivity(intent);
         });
         binding.btnAddCart.setOnClickListener(view ->{
