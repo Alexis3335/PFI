@@ -1,3 +1,8 @@
+/**
+ * @author Alexis Perreault, Léa Trudeau
+ */
+
+
 package com.example.pfi;
 
 import java.io.Serializable;

@@ -1,9 +1,16 @@
 package com.example.pfi;
 
+/**
+ * @author Alexis Perreault, Léa Trudeau
+ */
 import android.graphics.drawable.Drawable;
 
 import java.io.Serializable;
 
+/**
+ * Représente un produit
+ * @author Alexis Perreault
+ */
 public class Produit implements Serializable {
     private String nom;
     private String description;

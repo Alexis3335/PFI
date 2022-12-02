@@ -6,9 +6,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.VideoView;
 
 import java.util.ArrayList;
 
@@ -23,12 +25,23 @@ public class Produits extends AppCompatActivity {
         RecyclerView recycler = findViewById(R.id.recyclerProduits);
         Button btnAllerPanier = findViewById(R.id.btnAllerPanier);
         Clients client = (Clients) getIntent().getSerializableExtra("client");
+        VideoView videoView = findViewById(R.id.videoViewProduits);
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                mediaPlayer.setLooping(true);
+            }
+        });
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.video_menu);
+        videoView.start();
 
         btnAllerPanier.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Produits.this,panier.class);
                 intent.putExtra("client",client);
+                videoView.stopPlayback();
+
                 startActivity(intent);
             }
         });
