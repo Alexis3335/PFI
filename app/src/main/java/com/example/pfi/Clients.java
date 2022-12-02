@@ -34,7 +34,9 @@ public class Clients implements Serializable {
         int Prix = Integer.parseInt(prix);
         addPrixPanier(Prix);
     }
-
+    public void emptyProduits(){
+        this.produits.clear();
+    }
     private Clients(String nom) {
         this.nom = nom;
         prixPanier = 0;
