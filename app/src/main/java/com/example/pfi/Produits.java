@@ -55,8 +55,6 @@ public class Produits extends AppCompatActivity {
         recycler.setLayoutManager(new LinearLayoutManager(this));
         recycler.setItemAnimator(new DefaultItemAnimator());
         recycler.setHasFixedSize(true);
-
-
     }
 
     public void remplirProduits(ArrayList<Produit> produits){
