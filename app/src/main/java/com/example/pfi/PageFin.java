@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.VideoView;
 
 public class PageFin extends AppCompatActivity {
 
@@ -20,6 +21,16 @@ public class PageFin extends AppCompatActivity {
 
         Button btnRetour = findViewById(R.id.btnRetourFin);
         Clients client = (Clients)getIntent().getSerializableExtra("client");
+        VideoView videoView = findViewById(R.id.videoViewFin);
+
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                mediaPlayer.setLooping(true);
+            }
+        });
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.money_falling_down);
+        videoView.start();
 
         btnRetour.setOnClickListener(new View.OnClickListener(){
             @Override
