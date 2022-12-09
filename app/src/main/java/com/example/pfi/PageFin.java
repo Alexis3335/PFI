@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 public class PageFin extends AppCompatActivity {
@@ -22,6 +23,9 @@ public class PageFin extends AppCompatActivity {
         Button btnRetour = findViewById(R.id.btnRetourFin);
         Clients client = (Clients)getIntent().getSerializableExtra("client");
         VideoView videoView = findViewById(R.id.videoViewFin);
+        TextView txt = findViewById(R.id.msgMerci);
+        String string = getString(R.string.message_merci) + client.getNom();
+        txt.setText(string);
 
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
