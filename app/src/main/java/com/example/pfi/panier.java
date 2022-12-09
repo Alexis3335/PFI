@@ -27,8 +27,8 @@ public class panier extends AppCompatActivity implements Serializable {
         Clients client = (Clients)intent.getSerializableExtra("client");
         ArrayList<Produit> panier = client.getProduits();
 
-        Button retour = findViewById(R.id.btnRetourPanier);
-        Button payer = findViewById(R.id.btnPayerPanier);
+        Button retour = (Button) findViewById(R.id.btnRetourPanier);
+        Button payer = (Button) findViewById(R.id.btnPayerPanier);
         RecyclerView recycler = findViewById(R.id.recyclerPanier);
         boolean estPanier = true;
 
@@ -71,6 +71,7 @@ public class panier extends AppCompatActivity implements Serializable {
         payer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                client.emptyProduits();
                 Intent intent = new Intent(panier.this,PageFin.class);
                 intent.putExtra("client",client);
                 startActivity(intent);
