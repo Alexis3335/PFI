@@ -6,4 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".PageFin">
 
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="213dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:fontFamily="@font/zelda_font"
+            android:padding="20sp"
+            android:text="@string/message_payé"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:fontFamily="@font/zelda_font"
+            android:padding="20sp"
+            android:text="@string/message_merci"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnRetourFin"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_weight="0"
+            android:backgroundTint="#767676"
+            android:fontFamily="@font/zelda_font"
+            android:minHeight="48dp"
+            android:text="@string/btnBack"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerProduits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <Button
+            android:id="@+id/btnQuitter"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_weight="0"
+            android:backgroundTint="#8B422C"
+            android:fontFamily="@font/zelda_font"
+            android:minHeight="48dp"
+            android:text="@string/btnquit"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerProduits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

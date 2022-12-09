@@ -45,5 +45,4 @@ public class details extends AppCompatActivity implements Serializable {
                     R.raw.son_ajout_panier).start();
         });
     }
-
 }

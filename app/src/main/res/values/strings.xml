@@ -86,4 +86,7 @@
     <string name="btnAddCart">Add to cart</string>
     <string name="erreur_login">Please fill all fields</string>
     <string name="btnShoppingCart">Go to checkout</string>
+    <string name="message_payé">Order placed!</string>
+    <string name="message_merci">Thank you </string>
+    <string name="btnquit">Quit</string>
 </resources>

@@ -68,7 +68,7 @@ public class Produits extends AppCompatActivity {
      */
     public void remplirProduits(ArrayList<Produit> produits){
         produits.add(new Produit(getString(R.string.carrot_stew_name),getString(R.string.carrot_stew_description),
-        R.drawable.carrot_stew,getString(R.string.carrot_stew_price),getString(R.string.carrot_stew_hearts)));
+                R.drawable.carrot_stew,getString(R.string.carrot_stew_price),getString(R.string.carrot_stew_hearts)));
 
         produits.add(new Produit(getString(R.string.egg_pudding_name),getString(R.string.egg_pudding_description),
                 R.drawable.egg_pudding,getString(R.string.egg_pudding_price),getString(R.string.egg_pudding_hearts)));

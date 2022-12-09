@@ -55,4 +55,7 @@
     <string name="msg_added_to_cart">Ajouté au panier</string>
     <string name="btnShoppingCart">Aller au panier</string>
     <string name="payCart">Payer le panier</string>
+    <string name="message_payé">Panier payé!</string>
+    <string name="message_merci">Merci </string>
+    <string name="btnquit">Quitter</string>
 </resources>

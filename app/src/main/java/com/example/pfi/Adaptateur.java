@@ -39,7 +39,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
         LayoutInflater inflator = LayoutInflater.from(context);
         View itemView;
         if(!estPanier)
-         itemView = inflator.inflate(R.layout.produit_ligne,parent,false);
+            itemView = inflator.inflate(R.layout.produit_ligne,parent,false);
         else
             itemView = inflator.inflate(R.layout.produit_panier_ligne,parent,false);
         return new MyViewHolder(itemView);

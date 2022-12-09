@@ -37,6 +37,7 @@ public class Clients implements Serializable {
     public void emptyProduits(){
         this.produits.clear();
     }
+
     private Clients(String nom) {
         this.nom = nom;
         prixPanier = 0;
