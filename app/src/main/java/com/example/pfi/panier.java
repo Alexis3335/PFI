@@ -31,6 +31,9 @@ public class panier extends AppCompatActivity implements Serializable {
         Button payer = (Button) findViewById(R.id.btnPayerPanier);
         RecyclerView recycler = findViewById(R.id.recyclerPanier);
         boolean estPanier = true;
+        TextView prixtotal = findViewById(R.id.txtViewPrixTotal);
+        String text = getString(R.string.total_price) + " " + client.getPrixPanier() + "\uD83D\uDC8E";
+        prixtotal.setText(text);
 
 
         Adaptateur adaptateur = new Adaptateur(this,getApplicationContext(),
