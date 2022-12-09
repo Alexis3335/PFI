@@ -3,6 +3,7 @@ package com.example.pfi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -77,6 +78,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
                 image = itemView.findViewById(R.id.imageProduitRecycler);
                 layout = itemView.findViewById(R.id.contraintLayoutProduitLigne);
                 layout.setOnClickListener(view -> {
+
                     Intent intent = new Intent(view.getContext(), details.class);
                     intent.putExtra("produit", produit);
                     intent.putExtra("client", client);

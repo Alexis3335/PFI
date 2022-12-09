@@ -62,6 +62,10 @@ public class Produits extends AppCompatActivity {
         recycler.setHasFixedSize(true);
     }
 
+    /**
+     * Remplis la liste avec tous les produits
+     * @param produits La liste à remplir
+     */
     public void remplirProduits(ArrayList<Produit> produits){
         produits.add(new Produit(getString(R.string.carrot_stew_name),getString(R.string.carrot_stew_description),
         R.drawable.carrot_stew,getString(R.string.carrot_stew_price),getString(R.string.carrot_stew_hearts)));
