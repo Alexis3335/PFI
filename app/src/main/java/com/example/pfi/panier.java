@@ -5,8 +5,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -30,8 +32,9 @@ public class panier extends AppCompatActivity implements Serializable {
         RecyclerView recycler = findViewById(R.id.recyclerPanier);
         boolean estPanier = true;
 
-        Adaptateur adaptateur = new Adaptateur(getApplicationContext(),panier, estPanier);
 
+        Adaptateur adaptateur = new Adaptateur(this,getApplicationContext(),
+                panier, estPanier);
         TextView nomprenom = findViewById(R.id.prenomnom);
 
         Thread th = new Thread(new Runnable() {
@@ -80,7 +83,6 @@ public class panier extends AppCompatActivity implements Serializable {
         recycler.setLayoutManager(new LinearLayoutManager(this));
         recycler.setItemAnimator(new DefaultItemAnimator());
         recycler.setHasFixedSize(true);
-
 
     }
 }

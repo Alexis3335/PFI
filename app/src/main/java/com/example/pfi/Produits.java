@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -50,7 +51,9 @@ public class Produits extends AppCompatActivity {
 
         remplirProduits(arrProduits);
 
-        Adaptateur adaptateur = new Adaptateur(getApplicationContext(),arrProduits, estPanier);
+        Activity activity = this;
+        Adaptateur adaptateur = new Adaptateur(activity,getApplicationContext(),
+                arrProduits, estPanier);
         adaptateur.client = client;
         recycler.setAdapter(adaptateur);
 
