@@ -42,5 +42,4 @@ public class details extends AppCompatActivity implements Serializable {
             client.addProduit(produit);
         });
     }
-
 }

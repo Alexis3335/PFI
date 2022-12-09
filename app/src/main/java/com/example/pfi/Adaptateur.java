@@ -51,7 +51,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
         holder.produit = produits.get(position);
         holder.client = client;
 
-        if(estPanier)
+        if(estPanier && !produits.isEmpty())
             holder.prix.setText(produits.get(position).getPrix());
     }
 
@@ -72,7 +72,7 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
             super(itemView);
 
 
-            if (!estPanier){
+            //if (!estPanier){
                 txtNom = itemView.findViewById(R.id.nomProduitRecycler);
                 image = itemView.findViewById(R.id.imageProduitRecycler);
                 layout = itemView.findViewById(R.id.contraintLayoutProduitLigne);
@@ -84,13 +84,13 @@ public class Adaptateur extends RecyclerView.Adapter<Adaptateur.MyViewHolder> {
                     view.getContext().startActivity(intent);
 
                 });
-            }
-            else {
+            //}
+            //else {
                 txtNom = itemView.findViewById(R.id.nomProduit);
                 image = itemView.findViewById(R.id.imageProduit);
                 prix = itemView.findViewById(R.id.prixProduit);
-                layout = itemView.findViewById(R.id.constraintLayoutProduitPanierLigne);
-            }
+                //layout = itemView.findViewById(R.id.constraintLayoutProduitPanierLigne);
+            //}
         }
     }
 }
