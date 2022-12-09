@@ -25,16 +25,9 @@ public class PageFin extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 client.emptyProduits();
-                Intent intent = new Intent(PageFin.this, login.class);
+                Intent intent = new Intent(PageFin.this, Produits.class);
                 intent.putExtra("client", client);
                 startActivity(intent);
-            }
-        });
-        btnRetour.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                finish();
-                System.exit(0);
             }
         });
     }
